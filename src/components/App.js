@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-// import logo from '../logo.svg';
 import '../styles/App.css';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import BaseLayout from './BaseLayout';
+import PartInfo from './PartInfo';
 import Parts from './Parts';
 import Tools from './Tools'
 import Services from './Services';
@@ -13,19 +13,10 @@ import Home from './Home';
 class App extends Component {
   render() {
     return (
-      /*<div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>*/
-
       <BrowserRouter>
         <BaseLayout>
           <Switch>
+            <Route path="/parts/:partnum" component={PartInfo}/>
             <Route path="/parts" component={Parts}/>
             <Route path="/tools" component={Tools}/>
             <Route path="/services" component={Services}/>
@@ -35,7 +26,6 @@ class App extends Component {
           </Switch>
         </BaseLayout>
       </BrowserRouter>
-
     );
   }
 }
