@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Link } from 'react-router-dom';
 import tools from "../data/tools.js";
 
 class Tools extends Component {
@@ -18,6 +18,9 @@ class Tools extends Component {
                 <li className="list-group-item">Price: {tool.price}</li>
                 <li className="list-group-item">Warranty: {tool.warranty}</li>
               </ul>
+          </div>
+          <div className="card-footer">
+            <Link to={`${match.url}/${tool.partNumber}`}>Details</Link>
           </div>
         </div>
       )

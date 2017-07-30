@@ -10,15 +10,12 @@ class Parts extends Component {
     let navParts = parts.map((part) => {
       return(
         <div key={part.id} className="col-sm-4">
-          <div className="card"  style={{ marginTop: 20}}>
+          <div className="card" style={{marginTop: 20}}>
             <img className="card-image-top" src={part.image} alt={part.imageAlt} style={{width:"150px", margin:"auto"}} />
             <div className="card-block">
               <h4 className="card-title">{part.name}</h4>
-              <p className="card-text">{part.description}</p>
-              <ul className="list-group list-group-flush">
-                <li className="list-group-item">Price: {part.price}</li>
-                <li className="list-group-item">Warranty: {part.warranty}</li>
-              </ul>
+              <p className="card-text">Part No. {part.partNumber}</p>
+              <p className="card-text" style={{color:"red", fontSize:"1.3em"}}><strong>${part.price}</strong></p>
             </div>
             <div className="card-footer">
               <Link to={`${match.url}/${part.partNumber}`}>Details</Link>

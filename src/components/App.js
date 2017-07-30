@@ -4,6 +4,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import BaseLayout from './BaseLayout';
 import PartInfo from './PartInfo';
 import Parts from './Parts';
+import ToolInfo from './ToolInfo';
 import Tools from './Tools'
 import Services from './Services';
 import About from './About';
@@ -18,6 +19,7 @@ class App extends Component {
           <Switch>
             <Route path="/parts/:partnum" component={PartInfo}/>
             <Route path="/parts" component={Parts}/>
+            <Route path="/tools/:partnum" component={ToolInfo}/>
             <Route path="/tools" component={Tools}/>
             <Route path="/services" component={Services}/>
             <Route path="/about" component={About} />

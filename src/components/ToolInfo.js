@@ -1,29 +1,29 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import parts from '../data/parts';
+import tools from '../data/tools';
 
-import Part from './Part';
+import Detail from './Detail';
 
-export default class PartInfo extends Component {
+export default class ToolInfo extends Component {
 
   render() {
 
     const {partnum} = this.props.match.params;
 
-    let favParts = parts.map((item) => {
+    let favDetail = tools.map((item) => {
 
       if(item.partNumber === partnum) {
         return (
-          <Part key={item.id} data={item}/>
+          <Detail key={item.id} data={item}/>
         );
       }
     });
 
     return (
       <div className="text-center" style={{marginTop: 100}}>
-        <Link className="btn btn-large btn-danger" to="/parts">Back to Parts</Link>
-        {favParts}
+        <Link className="btn btn-large btn-danger" to="/tools">Back to Tools</Link>
+        {favDetail}
       </div>
     );
   }
