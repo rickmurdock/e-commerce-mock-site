@@ -14,4 +14,6 @@ tools = [
     price: "19.99",
     warranty: "Lifetime",
   },
-]
+];
+
+export default tools;
