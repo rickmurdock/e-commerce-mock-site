@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import parts from '../data/parts';
 
-import Part from './Part';
+import Detail from './Detail';
 
 export default class PartInfo extends Component {
 
@@ -15,7 +15,7 @@ export default class PartInfo extends Component {
 
       if(item.partNumber === partnum) {
         return (
-          <Part key={item.id} data={item}/>
+          <Detail key={item.id} data={item}/>
         );
       }
     });

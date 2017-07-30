@@ -13,11 +13,8 @@ class Tools extends Component {
           <img className="card-image-top" src={tool.image} alt={tool.imageAlt} style={{width: "150px", margin:"auto"}} />
           <div className="card-block">
               <h4 className="card-title">{tool.name}</h4>
-              <p className="card-text">{tool.description}</p>
-              <ul className="list-group list-group-flush">
-                <li className="list-group-item">Price: {tool.price}</li>
-                <li className="list-group-item">Warranty: {tool.warranty}</li>
-              </ul>
+              <p className="card-text">Part No. {tool.partNumber}</p>
+              <p className="card-text" style={{color:"red", fontSize:"1.3em"}}><strong>${tool.price}</strong></p>
           </div>
           <div className="card-footer">
             <Link to={`${match.url}/${tool.partNumber}`}>Details</Link>
