@@ -9,8 +9,9 @@ class Parts extends Component {
 
     let navParts = parts.map((part) => {
       return(
-        <div className="card" key={parts.id} style={{width: "50rem", marginTop: 80}}>
-          <img className="card-image-top" src={part.image} alt={part.imageAlt} style={{width: "150px"}} />
+        <div className="col-sm-4">
+        <div className="card" key={parts.id} style={{ marginTop: 20}}>
+          <img className="card-image-top" src={part.image} alt={part.imageAlt} style={{width:"150px", margin:"auto"}} />
           <div className="card-block">
               <h4 className="card-title">{part.name}</h4>
               <p className="card-text">{part.description}</p>
@@ -19,15 +20,21 @@ class Parts extends Component {
                 <li className="list-group-item">Warranty: {part.warranty}</li>
               </ul>
           </div>
+          </div>
         </div>
       )
     });
     return (
-      <div className="card-deck-wrapper" style={{marginLeft: 25, marginRight: 25}}>
-        <div className="card-deck">
+      <div className="card-deck-wrapper" style={{marginLeft: 25, marginRight: 25 , marginTop: 80, marginBottom: 100}}>
+         <div className="card-deck">
+         <div className="row">
+      
+        
           {navParts}
+          </div>
         </div>
       </div>
+      
     );
   }
 }

@@ -27,7 +27,17 @@ const parts = [
     price: "4.39",
     warranty: "30 days",
     image: require('../images/acd_pf1218.jpg'),
-    imageAlt: "spark plug picture"
+    imageAlt: "oil filter picture"
+  },
+    {
+    id: 4,
+    partNumber: "VV211",
+    name: "Valvoline VR1 Racing 20W50 Motor Oil",
+    description: "Valvoline® VR1 Racing Oil's high zinc provides race-level protection for high performance engines on the race track or the highway.",
+    price: "6.39",
+    warranty: "none",
+    image: require('../images/racingOil.jpg'),
+    imageAlt: "oil bottle picture"
   },
 ];
 
