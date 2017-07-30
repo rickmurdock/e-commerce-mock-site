@@ -12,7 +12,7 @@ const Detail = (props) => {
           <h4 className="card-title">{detail.name}</h4>
           <p className="card-text">Part No. {detail.partNumber}</p>
           <ul className="list-group list-group-flush">
-            <li className="list-group-item">Price: ${detail.price}</li>
+            <li className="list-group-item">Price: {detail.price}</li>
             <li className="list-group-item">Warranty: {detail.warranty}</li>
             <li className="list-group-item text-left">{detail.details}</li>
           </ul>

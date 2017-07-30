@@ -15,7 +15,7 @@ class Parts extends Component {
             <div className="card-block">
               <h4 className="card-title">{part.name}</h4>
               <p className="card-text">Part No. {part.partNumber}</p>
-              <p className="card-text" style={{color:"red", fontSize:"1.3em"}}><strong>${part.price}</strong></p>
+              <p className="card-text" style={{color:"red", fontSize:"1.3em"}}><strong>{part.price}</strong></p>
             </div>
             <div className="card-footer">
               <Link to={`${match.url}/${part.partNumber}`}>Details</Link>
@@ -25,14 +25,11 @@ class Parts extends Component {
       )
     });
     return (
-      <div className="card-deck-wrapper" style={{marginLeft: 25, marginRight: 25 , marginTop: 80, marginBottom: 100}}>
+      <div className="card-deck-wrapper" style={{marginLeft: 25, marginRight: 25 , marginTop: 70, marginBottom: 100}}>
         <div className="card-deck">
-          <div className="row">
             {navParts}
-          </div>
         </div>
       </div>
-      
     );
   }
 }

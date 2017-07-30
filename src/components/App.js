@@ -6,6 +6,7 @@ import PartInfo from './PartInfo';
 import Parts from './Parts';
 import ToolInfo from './ToolInfo';
 import Tools from './Tools'
+import ServiceInfo from './ServiceInfo'
 import Services from './Services';
 import About from './About';
 import Contact from './Contact';
@@ -21,6 +22,7 @@ class App extends Component {
             <Route path="/parts" component={Parts}/>
             <Route path="/tools/:partnum" component={ToolInfo}/>
             <Route path="/tools" component={Tools}/>
+            <Route path="/services/:partnum" component={ServiceInfo}/>
             <Route path="/services" component={Services}/>
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
