@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
 import services from '../data/services';
-
 import Detail from './Detail';
 
 export default class ServiceInfo extends Component {

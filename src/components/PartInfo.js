@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
 import parts from '../data/parts';
-
 import Detail from './Detail';
 
 export default class PartInfo extends Component {

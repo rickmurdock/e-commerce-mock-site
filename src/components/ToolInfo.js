@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
 import tools from '../data/tools';
-
 import Detail from './Detail';
 
 export default class ToolInfo extends Component {
