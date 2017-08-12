@@ -2,6 +2,12 @@
 
 Create an E-commerce Mock Site.
 
+---
+
+View the finished project: [http://ricksautoparts.surge.sh/](http://ricksautoparts.surge.sh/)
+
+---
+
 ## Getting Started  
 
 * To get started you will need to use `create-react-app` to quickly scaffold a project. You should migrate your components into a `components` folder in the `src` directory and the styles into a `styles` folder in the `src` directory. Link up all pages to make sure they working and test using `npm run start` in the console, use Ctrl+c to exit.
